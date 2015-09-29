@@ -74,6 +74,7 @@
         label.adjustsLetterSpacingToFitWidth = YES;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = self.labelTextColorOutsideSlider;
+        label.numberOfLines = 0;
         [self.backgroundView addSubview:label];
         [self.labels addObject:label];
         
@@ -98,6 +99,7 @@
         label.adjustsLetterSpacingToFitWidth = YES;
         label.textAlignment = NSTextAlignmentCenter;
         label.textColor = self.labelTextColorInsideSlider;
+        label.numberOfLines = 0;
         [self.sliderView addSubview:label];
         [self.onTopLabels addObject:label];
     }
@@ -138,6 +140,7 @@
         label.tag               = idx;
         label.attributedText    = str;
         label.textAlignment     = NSTextAlignmentCenter;
+        label.numberOfLines     = 0;
         
         [self.backgroundView addSubview:label];
         [self.labels addObject:label];
@@ -164,7 +167,8 @@
         UILabel *label          = [[UILabel alloc] init];
         label.attributedText    = str;
         label.textAlignment     = NSTextAlignmentCenter;
-       
+        label.numberOfLines     = 0;
+        
         [self.sliderView addSubview:label];
         [self.onTopLabels addObject:label];
     }];
