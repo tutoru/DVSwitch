@@ -33,5 +33,6 @@
 - (void)setWillBePressedHandler:(void (^)(NSUInteger index))handler;
 
 - (void)selectIndex:(NSInteger)index animated:(BOOL)animated; // sets the index without calling the handler block
+- (NSInteger)getIndex;
 
 @end

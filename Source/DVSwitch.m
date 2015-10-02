@@ -221,6 +221,10 @@
     }
 }
 
+- (NSInteger)getIndex {
+    return self.selectedIndex;
+}
+
 - (void)layoutSubviews
 {
     self.backgroundView.layer.cornerRadius = self.cornerRadius;
